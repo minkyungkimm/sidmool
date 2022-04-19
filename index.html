@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시드물</title>
+    <!-- 폰트 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 스타일시트 연결 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fontawesome연결 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="main_banner_wrap">
+            <!-- header -->
+             <header>
+                 <!-- 로고 -->
+                <h1 id="logo">
+                    <a href="#none">
+                        <img src="./img/logo_img.png" alt="로고이미지">
+                    </a>
+                </h1>
+                <!-- 탭,모바일에서만 보이는 버튼 -->
+                <button type="button" id="for_m">
+                    <span class="hamberger"></span>
+                </button>
+                <!-- 햄버거 버튼 누르면 열리는 메뉴 -->
+                <div class="menu-bar-box">
+                    <ul class="menu-bar">
+                        <li class="menu-list">
+                            <a href="#none">기능별</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#none">성분 라인별</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#none">고민별</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#none">내츄럴99</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#none">시리즈 모음</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#none">마이페이지</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- 카테고리,검색바 -->
+                <ul id="bar">
+                    <li id="menu_wrap">
+                        <h4>category</h4>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="">기능별</a>
+                            </li>
+                            <li>
+                                <a href="">성분 라인별</a>
+                            </li>
+                            <li>
+                                <a href="">고민별</a>
+                            </li>
+                            <li>
+                                <a href="">내추럴99</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="search">
+                            <input type="text" id="search_box" placeholder="검색어를 입력해주세요.">
+                            <a href="#none">
+                                <img src="./img/돋보기.svg" alt="검색 돋보기">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- sub메뉴 -->
+                <div class="log-in">
+                    <ul id="submenu_wrap">
+                        <li>
+                            <a href="#none">
+                                <h5>로그인</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <h5>회원가입</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="./img/사람.png" alt="마이페이지 ">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             </header>
+             <!-- banner -->
+             <ul id="banner">
+                 <li class="img_box">
+                     <div class="in_box">
+                         <div class="banner_txt">
+                            <span>시리고 맑은 물</span>
+                            <h3>SIDMOOL</h3>
+                        </div>
+                     </div>
+                     <div id="leaf">
+                        <img class="leaf_img" src="./img/xxx.png" alt="나뭇잎">
+                     </div>
+                     <div id="leaf1">
+                        <img class="leaf_img" src="./img/ds.png" alt="나뭇잎">
+                     </div>
+                     <div id="leaf2">
+                        <img class="leaf_img" src="./img/fad.png" alt="나뭇잎">
+                     </div>
+                    <div id="svg-container">
+                        <div id="move"></div>
+                    </div>
+                 </li>
+                 <li class="img_box">
+                    <div class="in_box">
+                        <div class="banner_txt">
+                           <h4>Only in</h4> <h3>SIDMOOL</h3>
+                       </div>
+                    </div>
+                    <div id="svg-container">
+                        <div id="move"></div>
+                    </div>
+                 </li>
+                 <li class="img_box">
+                    <div class="in_box">
+                        <div class="banner_txt">
+                           <h3>Save the nature</h3>
+                       </div>
+                    </div>
+                    <div id="svg-container">
+                        <div id="move"></div>
+                    </div>
+                 </li>
+             </ul>
+             <!-- pagination -->
+             <ul id="pagination">
+                 <li class="circle on"></li>
+                 <li class="circle"></li>
+                 <li class="circle"></li>
+             </ul>
+        </div>
+        <section id="section1">
+            <div class="container">
+                <!-- 헤딩 -->
+                <h3 class="heading">신제품</h3>
+                <!-- 컨텐츠 -->
+                <div class="content">
+                    <div class="con_event_box">
+                        <div class="con_mask swiper mySwiper2">
+                            <div class="con_slider swiper-wrapper">
+                                <div class="c_slide swiper-slide">
+                                    <div class="con_box">
+                                        <div class="con_img">
+                                            <a href="#none">
+                                                <img src="./img/img1.png" alt="제품이미지">
+                                            </a>
+                                        </div>    
+                                        <div class="con_txt">
+                                            <h5>진한 어성초 시카 에센셜 165ml</h5>
+                                            <p>좁쌀/진정/모공</p>
+                                            <h5 id="sec1_h5">₩12,400</h5>
+                                        </div>
+                                    </div>
+                                    <div class="sale" id="sale1">
+                                        <img src="./img/on sale.png" alt="세일 이미지">
+                                    </div>
+                                </div>
+                                <div class="c_slide swiper-slide">
+                                    <div class="con_box">
+                                        <div class="con_img" id="con_img1">
+                                            <a href="#none">
+                                                <img src="./img/img22.png" alt="제품이미지">
+                                            </a>
+                                        </div>    
+                                        <div class="con_txt" id="con_txt1">
+                                            <h5>이데베논 탄력 수분 토너 128ml</h5>
+                                            <p>탄력의 어머니 이데베논을 담은 피부사랑</p>
+                                            <h5>₩22,800</h5>
+                                        </div>
+                                    </div>
+                                    <div class="sale" id="sale2">
+                                        <img src="./img/on sale.png" alt="세일 이미지">
+                                    </div>
+                                </div>
+                                <div class="c_slide swiper-slide">
+                                    <div class="con_box">
+                                        <div class="con_img" id="con_img2">
+                                            <a href="#none">
+                                                <img src="./img/img3.png" alt="제품이미지">
+                                            </a>
+                                        </div>  
+                                        <div class="con_txt" id="con_txt2">
+                                            <h5>민중기 피브로블라스트 앰플 30ml</h5>
+                                            <p>바이오 기능성 화장품 rh-bFGF 20PPM 99%</p>
+                                            <h5>₩86,800</h5>
+                                        </div>
+                                    </div>
+                                    <div class="sale" id="sale3">
+                                        <img src="./img/on sale.png" alt="세일 이미지">
+                                    </div>
+                                </div>
+                                <div class="c_slide swiper-slide">
+                                    <div class="con_box">
+                                        <div class="con_img">
+                                            <a href="#none">
+                                                <img src="./img/img1.png" alt="제품이미지">
+                                            </a>
+                                        </div>    
+                                        <div class="con_txt">
+                                            <h5>진한 어성초 시카 에센셜 165ml</h5>
+                                            <p>좁쌀/진정/모공</p>
+                                            <h5 id="sec1_h5">₩12,400</h5>
+                                        </div>
+                                    </div>
+                                    <div class="sale" id="sale1">
+                                        <img src="./img/on sale.png" alt="세일 이미지">
+                                    </div>
+                                </div>
+                                <div class="c_slide swiper-slide">
+                                    <div class="con_box">
+                                        <div class="con_img" id="con_img1">
+                                            <a href="#none">
+                                                <img src="./img/img22.png" alt="제품이미지">
+                                            </a>
+                                        </div>    
+                                        <div class="con_txt" id="con_txt1">
+                                            <h5>이데베논 탄력 수분 토너 128ml</h5>
+                                            <p>탄력의 어머니 이데베논을 담은 피부사랑</p>
+                                            <h5>₩22,800</h5>
+                                        </div>
+                                    </div>
+                                    <div class="sale" id="sale2">
+                                        <img src="./img/on sale.png" alt="세일 이미지">
+                                    </div>
+                                </div>
+                                <div class="c_slide swiper-slide">
+                                    <div class="con_box">
+                                        <div class="con_img" id="con_img2">
+                                            <a href="#none">
+                                                <img src="./img/img3.png" alt="제품이미지">
+                                            </a>
+                                        </div>  
+                                        <div class="con_txt" id="con_txt2">
+                                            <h5>민중기 피브로블라스트 앰플 30ml</h5>
+                                            <p>바이오 기능성 화장품 rh-bFGF 20PPM 99%</p>
+                                            <h5>₩86,800</h5>
+                                        </div>
+                                    </div>
+                                    <div class="sale" id="sale3">
+                                        <img src="./img/on sale.png" alt="세일 이미지">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next_but swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <div id="circle_img"></div>
+            <div id="co">
+                <img src="./img/나뭇잎.PNG" alt="">
+            </div>
+            <div class="container">
+                <!-- 왼쪽 -->
+                <div id="sec2_l">
+                    <ul id="sec2_menu_wrap">
+                        <li class="sec2_list">
+                            <div class="line"></div>
+                            <a href="#none">
+                                <span>주름/탄력 관리 라인</span>
+                            </a>
+                        </li>
+                        <li class="sec2_list">
+                            <div class="line"></div>
+                            <a href="#none">
+                                <span>닥터트럽 라인</span>
+                            </a>
+                        </li>
+                        <li class="sec2_list">
+                            <div class="line"></div>
+                            <a href="#none">
+                                <span>수분크림 라인</span>
+                            </a>
+                        </li>
+                        <li class="sec2_list">
+                            <div class="line"></div>
+                            <a href="#none">
+                                <span>미백관리 라인</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 오른쪽 -->
+                <div id="sec2_r">
+                    <div class="txt">
+                        <h4>SIDMOOL</h4>
+                        <h4>SOLUTION</h4>
+                    </div>
+                    <span>시드물이 추천하는 솔루션</span>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <!-- 헤딩 -->
+                <h3 class="heading">시드물 추천 더마 화장품</h3>
+                <!-- 컨텐츠 -->
+                <div class="content">
+                    <div class="con_event_box">
+                        <div class="con_mask swiper mySwiper2">
+                            <div class="con_slider swiper-wrapper">
+                                <div class="c_slider swiper-slide">
+                                    <div class="con_box con_box2">
+                                        <div class="con_img">
+                                            <a href="#none">
+                                                <img src="./img/img4.png" alt="제품이미지">
+                                            </a>
+                                        </div>
+                                        <div class="con_txt">
+                                            <h5>닥터트럽 바이오 리페어 썬크림</h5>
+                                            <p>장벽강화/수분 보습</p>
+                                            <h5 id="h5">₩19,800</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c_slider swiper-slide">
+                                        <div class="con_box con_box2">
+                                            <div class="con_img">
+                                                <a href="#none">
+                                                    <img src="./img/img5.png" alt="제품이미지"> 
+                                                </a>
+                                            </div>
+                                            <div class="con_txt">
+                                                <h5>흉터 케어 겔</h5>
+                                                <p>켈로이드성 흉터,외상 흉터,<br>
+                                                오래되거나 새로운 흉터 관리</p>
+                                                <h5>₩26,600</h5>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="c_slider swiper-slide">
+                                        <div class="con_box con_box2">
+                                            <div class="con_img">
+                                                <a href="#none">
+                                                    <img src="./img/img6.png" alt="제품이미지">
+                                                </a>
+                                            </div>
+                                            <div class="con_txt">
+                                                <h5>시드물 센텔라 구스팟 크림</h5>
+                                                <p>병풀 핵심성분 15%<br>
+                                                지성,복합성,문제성 피부 추천</p>
+                                                <h5>₩16,800</h5>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="c_slider swiper-slide">
+                                    <div class="con_box con_box2">
+                                        <div class="con_img">
+                                            <a href="#none">
+                                                <img src="./img/img4.png" alt="제품이미지">
+                                            </a>
+                                        </div>
+                                        <div class="con_txt">
+                                            <h5>닥터트럽 바이오 리페어 썬크림</h5>
+                                            <p>장벽강화/수분 보습</p>
+                                            <h5 id="h5">₩19,800</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c_slider swiper-slide">
+                                        <div class="con_box con_box2">
+                                            <div class="con_img">
+                                                <a href="#none">
+                                                    <img src="./img/img5.png" alt="제품이미지"> 
+                                                </a>
+                                            </div>
+                                            <div class="con_txt">
+                                                <h5>흉터 케어 겔</h5>
+                                                <p>켈로이드성 흉터,외상 흉터,<br>
+                                                오래되거나 새로운 흉터 관리</p>
+                                                <h5>₩26,600</h5>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="c_slider swiper-slide">
+                                        <div class="con_box con_box2">
+                                            <div class="con_img">
+                                                <a href="#none">
+                                                    <img src="./img/img6.png" alt="제품이미지">
+                                                </a>
+                                            </div>
+                                            <div class="con_txt">
+                                                <h5>시드물 센텔라 구스팟 크림</h5>
+                                                <p>병풀 핵심성분 15%<br>
+                                                지성,복합성,문제성 피부 추천</p>
+                                                <h5>₩16,800</h5>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next_but swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <div id="circle_img2"></div>
+                <div id="to">
+                    <img src="./img/나뭇잎2.png" alt="">
+                </div>
+                <!-- 왼쪽 -->
+                <div id="sec4_left_box">
+                    <div class="txt">
+                        <h4>DAILY</h4>
+                        <h4>RECOMMENDED</h4>
+                    </div>
+                    <span>시드물에서 추천드리는 오늘의 화장품</span>
+                </div>
+                <!-- 오른쪽 -->
+                <div id="sec4_right_box">
+                    <!-- 슬라이드박스 -->
+                    <div id="event_box">
+                        <!-- 이전,다음 버튼 -->
+                        <div id="event_arrow">
+                            <button type="button" class="e_but_prev but swiper-button-prev" id="e_prev">
+                                <!-- <img src="./img/6_next.png_220121/prev.png" alt=""> -->
+                            </button>
+                            <button type="button" class="e_but_next but swiper-button-next" id="e_next">
+                                <!-- <img src="./img/6_next.png_220121/next.png" alt=""> -->
+                            </button>
+                        </div>
+                        <!-- 이벤트 갤러리 영역 -->
+                        <div id="mask"  class="swiper mySwiper">
+                            <div id="event_slider"  class="swiper-wrapper">
+                                <div class="e_slide swiper-slide">
+                                    <a href="#none" class="e_img">
+                                        <img src="./img/img.png" alt="제품이미지">
+                                    </a>
+                                </div>
+                                <div class="e_slide swiper-slide">
+                                    <a href="#none" class="e_img">
+                                        <img src="./img/img2.png" alt="제품이미지">
+                                    </a>
+                                </div>
+                                <div class="e_slide swiper-slide">
+                                    <a href="#none" class="e_img">
+                                        <img src="./img/event_img.png" alt="제품이미지">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <div class="container">
+                <!-- 위쪽 -->
+                <div id="top_box">
+                    <span>PROMISE</span>
+                    <h4>Safety &amp; Trust</h4>
+                </div>
+                <!-- 아래쪽 -->
+                <div id="bottom_box">
+                    <ul id="icon_box">
+                        <li class="icon">
+                            <div id="icon_img" class="icon_img_box">
+                                <img src="./img/icon1.png" alt="국제표준인증 아이콘">
+                            </div>
+                            <span>국제 표준 인증</span>
+                        </li>
+                        <li class="icon">
+                            <div id="icon_img2" class="icon_img_box">
+                                <img src="./img/icon2.png" alt="동물사랑 자연보호 아이콘">
+                            </div>
+                            <span>동물사랑 자연보호</span>
+                        </li>
+                        <li class="icon">
+                            <div id="icon_img3" class="icon_img_box">
+                                <img src="./img/icon3.png" alt="피부과 테스트 완료 아이콘">
+                            </div>
+                            <span>피부과 테스트 완료</span>
+                        </li>
+                        <li class="icon">
+                            <div id="icon_img4" class="icon_img_box">
+                                <img src="./img/icon4.png" alt="식품 성분 안정화 시스템 아이콘">
+                            </div>
+                            <span>식품 성분<br>안정화 시스템</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div id="footer_wrap">
+                <!-- 왼쪽 -->
+                <div id="footer_l">
+                    <img src="./img/footer logo.png" alt="시드물 로고 이미지">
+                </div>
+                <!-- 오른쪽 -->
+                <ul id="footer_r">
+                    <li class="f_list">
+                        <ul class="f_list_wrap">
+                            <li>상호:주식회사 시드물</li>
+                            <li>주소:우)35083 대전광역시 중구 안영로 42(안영동)</li>
+                            <li>전화:1577-9638(해외:+82-42-716-0227)</li>
+                            <li>팩스:042-367-7989</li>
+                        </ul>
+                    </li>
+                    <li class="f_list">
+                        <ul class="f_list_wrap">
+                            <li>사업자등록번호:305-81-3333</li>
+                            <li>건강기능식품판매업:대전 중구 제503</li>
+                            <li>통신판매업신고번호:제2008-대전중구-0247</li>
+                            <li>화장품 제조판매업 등록필증 제 1163</li>
+                        </ul>
+                    </li>
+                    <li class="f_list">
+                        <ul class="f_list_wrap">
+                            <li>서비스개선:help@sidmool.com</li>
+                            <li>대표:민중기</li>
+                        </ul>
+                    </li>
+                    <li class="f_list">copyright (c) 2008 sidmool all right reserved.</li>
+                </ul>
+            </div>
+        </footer>
+        <!-- 상단이동버튼 -->
+        <a href="#none" id="but_top">
+            <img src="./img/top_but.png" alt="탑 버튼">
+        </a>
+    </div>
+
+</body>
+</html>
